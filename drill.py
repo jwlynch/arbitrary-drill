@@ -12,7 +12,7 @@ while True:
 
     while live_seq:
         nxt = choice(live_seq)
-        print("press enter for next chord")
+        print("press enter for next item")
         input()
         print(nxt)
         live_seq.remove(nxt)
