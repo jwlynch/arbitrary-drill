@@ -12,8 +12,7 @@ if drill_seq[0] == "-b":
 else:
     printBeginP = False
 
-print("press enter for next item")
-input()
+input("press enter for next item: ")
 
 while True:
     live_seq = drill_seq[:]
@@ -26,5 +25,4 @@ while True:
         print(nxt)
         live_seq.remove(nxt)
 
-        print("press enter for next item")
-        input()
+        input("press enter for next item: ")
