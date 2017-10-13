@@ -15,6 +15,9 @@ else:
 while True:
     live_seq = drill_seq[:]
 
+    if printBeginP:
+        print("(start of new sequence)")
+
     while live_seq:
         nxt = choice(live_seq)
         print("press enter for next item")
