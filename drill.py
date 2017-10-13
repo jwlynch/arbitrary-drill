@@ -12,6 +12,9 @@ if drill_seq[0] == "-b":
 else:
     printBeginP = False
 
+print("press enter for next item")
+input()
+
 while True:
     live_seq = drill_seq[:]
 
