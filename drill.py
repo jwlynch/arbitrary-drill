@@ -40,3 +40,4 @@ def main(progname=None, args=None):
 
                 input("press enter for next item: ")
 
+main(sys.argv[0], sys.argv[1:])
