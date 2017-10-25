@@ -12,6 +12,9 @@ def main(progname=None, args=None):
     if progname is None:
         progname = "prog"
 
+    if len(sys.argv) == 0:
+        print("%s: too few arguments" % progname)
+        usage(progname)
 
 # "barely enough" parsing for -b
 if drill_seq[0] == "-b":
