@@ -10,6 +10,9 @@ def usage(progname):
     print("%s <item> { <item> }" % progname)
     print("%s randomly sequence through items," % (" " * len(progname)))
     print("%s having user hit enter before each one" % (" " * len(progname)))
+    print("%s -b <item> { <item> }" % progname)
+    print("%s randomly sequence through items as above, adding" % (" " * len(progname)))
+    print("%s a message printed when the sequence is started again" % (" " * len(progname)))
 
 def main(progname=None, args=None):
     if progname is None:
