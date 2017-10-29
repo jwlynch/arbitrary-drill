@@ -12,7 +12,7 @@ def main(progname=None, args=None):
     if progname is None:
         progname = "prog"
 
-    if len(sys.argv) == 0:
+    if len(args) == 0:
         print("%s: too few arguments" % progname)
         usage(progname)
     else: # 1 or more args
