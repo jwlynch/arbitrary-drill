@@ -7,6 +7,9 @@ def usage(progname):
     print("%s: Usage:" % progname)
     print("%s" % progname)
     print("%s (to print this usage message)" % (" " * len(progname)))
+    print("%s <item> { <item> }" % progname)
+    print("%s randomly sequence through items," % (" " * len(progname)))
+    print("%s having user hit enter before each one" % (" " * len(progname)))
 
 def main(progname=None, args=None):
     if progname is None:
