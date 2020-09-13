@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import sys
+import random
 from random import choice
 
 def usage(progname):
@@ -31,7 +32,7 @@ def main(progname=None, args=None):
         else:
             printBeginP = False
 
-        input("press enter for next item: ")
+        input("press enter for next key: ")
 
         while True:
             live_seq = drill_seq[:]
@@ -41,7 +42,10 @@ def main(progname=None, args=None):
 
             while live_seq:
                 nxt = choice(live_seq)
-                print(nxt)
+
+                which = choice( ["I V7sus4 I", "I bVII I"] )
+                print(which + " in key of " + nxt)
+
                 live_seq.remove(nxt)
 
                 input("press enter for next item: ")
